@@ -1,0 +1,53 @@
+<!-- Logic first -->
+ <!-- Design later -->
+  <!-- Password generator -->
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasword generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+   </head>
+   <body>
+    <div class="mainDiv">
+       <div class="firstDiv">
+         <h1 id="newPass"></h1>
+        <i class="fa-regular fa-copy" id="copyBtn"></i>
+       </div>
+
+       <div class="secondDiv">
+        <input type="range" id="range" min="6" max="20" value="10">
+        <p id="rangeVal"></p>
+       </div>
+
+
+        <div class="thirdDiv">
+            <div class="inputDiv">
+            <input type="checkbox" name="capitalLetter" id="capitalLetter">
+            <label for="capitalLetter">Capital Letter</label>
+            </div>
+            <br>
+            <div class="inputDiv">
+            <input type="checkbox" name="smallLetter" id="smallLetter">
+            <label for="smallLetter">Small Letter</label>
+            </div>
+            <br>
+            <div class="inputDiv">
+            <input type="checkbox" name="number" id="number">
+            <label for="number">Number</label>
+            </div>
+            <br>
+            <div class="inputDiv">
+            <input type="checkbox" name="symbol" id="symbol">
+            <label for="symbol">Symbol</label>
+            </div>
+        </div>
+    <button id="getPass">Generate password</button>
+    </div>
+
+
+<script src="index.js"></script>
+   </body>
+   </html>
